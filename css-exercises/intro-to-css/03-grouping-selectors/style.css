@@ -1,1 +1,5 @@
-/* Add CSS Styling */
+.inverted,
+.fancy {
+    font-family: Helvetica, "Times New Roman", Sans-serif;
+    font-size: 28px;
+}
