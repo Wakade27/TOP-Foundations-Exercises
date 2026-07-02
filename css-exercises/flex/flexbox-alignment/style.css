@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 400px;
+    background-color: #1e1e24;
+    border: 4px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+
+    /* WORKBENCH AREA */
+    /* Manipulate these two lines to see the Highway Framework in action */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+/* The Secondary Inner Highway */
+/* Makes Box 2 and 3 sit horizontally */
+.wrapper {
+    display: flex;
+    gap: 8px; /* Creates clean spacing between Box 2 and Box 3 */
+}
+
+.box1 { background-color: #ff595e; }
+.box2 { background-color: #ffca3a; }
+.box3 { background-color: #8ac926; }
