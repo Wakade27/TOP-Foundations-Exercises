@@ -65,4 +65,30 @@ const percentage = actual / max;
 
 console.log(percentage);
 
-// 6. Take a few minutes to keep playing around with various things in your script tag. Eventually, we will learn how to actually make these things show up on the webpage, but all of this logic will remain the same. Make sure you’re comfortable with it before moving on.
+// 6. Take a few minutes to keep playing around with various things in your script tag. Eventually, we will learn how to actually make these things show up on the webpage, but all of this logic will remain the same. Make sure you’re comfortable with it before moving on
+
+// 14th July Day #11
+
+function updateName() {
+  const name = prompt("Enter a new name");
+  button.textContent = `Player 1: ${name}`;
+}
+
+const button = document.querySelector("button");
+
+console.log(button);
+button.addEventListener("click", updateName);
+
+
+
+function createParagraph() {
+  const para = document.createElement("p");
+  para.textContent = "You clicked the button!";
+  document.body.appendChild(para);
+}
+
+const buttons = document.querySelectorAll("button");
+
+for (const button of buttons) {
+  button.addEventListener("click", createParagraph);
+}
